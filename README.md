@@ -1,2 +1,1 @@
-# srs
-SRS LaTeX Template for Prof. cliu in NTUT
+# SRS (Software Requirements Specification) LaTeX Template Referenced by the NTUT CSIE Database Course 

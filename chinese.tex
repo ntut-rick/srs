@@ -12,6 +12,8 @@
  
 \usepackage{listings} % Maybe for code block
 \usepackage{underscore}
+\usepackage[autocite=superscript]{biblatex}
+\addbibresource{references.bib}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -99,7 +101,7 @@
 
 \subsection{目的 (Purpose)}
 
-藉由本學期修習的資料庫系統課程，為了更加理解資料庫的運行及流程的設計，並且將過往學習到的網頁程式設計、網際網路技術與應用和各項程式語言的基礎學以致用，透過分工合作完成使用資料庫的系統，因此我們決定開發一個完整的美食商場系統「孜宮庭園」，此系統能讓使用者可以在網路上進行搜索、瀏覽、預約餐點和便捷的外送服務，藉由畫面精緻且簡易上手的介面，讓大家擁有賓至如歸的服務及美食體驗。
+藉由本學期修習的資料庫系統課程，為了更加理解資料庫的運行及流程的設計，並且將過往學習到的網頁程式設計、網際網路技術與應用和各項程式語言的基礎學以致用，透過分工合作完成使用資料庫的系統，因此我們決定開發一個完整的美食商場系統「孜宮庭園\autocite{csie_restaurant}」，此系統能讓使用者可以在網路上進行搜索、瀏覽、預約餐點和便捷的外送服務，藉由畫面精緻且簡易上手的介面，讓大家擁有賓至如歸的服務及美食體驗。
 
 \noindent 本系統主要目標為：
 \begin{enumerate}
@@ -189,6 +191,7 @@
 \newpage
 
 \section{References}
+\printbibliography[heading=none]
 \newpage
 
 \section{Appendix}

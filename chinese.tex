@@ -17,15 +17,22 @@
 % \usepackage{filecontents}
 % \begin{filecontents}{references.bib}
 % @online{csie_restaurant,
-%     author = "{guyleaf, asd3013593, RonToSucceed, a58176197, Andersonabc, orz123789}",
-%     title = "CSIE restaurant 孜宮庭園-北科大校園外送平台",
-%     url  = "https://github.com/guyleaf/csie_restaurant",
-%     keywords = "ntut"
+%   author = "{guyleaf, asd3013593, RonToSucceed, a58176197, Andersonabc, orz123789}",
+%   title = "CSIE restaurant 孜宮庭園-北科大校園外送平台",
+%   url  = "https://github.com/guyleaf/csie_restaurant",
+% }
+% @online{aws_arch_diagram,
+%   author = "Amazon Web Services",
+%   title = "What Is Architecture Diagramming?",
+%   url  = "https://aws.amazon.com/what-is/architecture-diagramming",
 % }
 % \end{filecontents}
 
 \usepackage[autocite=superscript]{biblatex}
 \addbibresource{references.bib}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 \usepackage{hyperref}
 \hypersetup{
@@ -182,6 +189,9 @@
 \section{系統 (System)}
 \subsection{系統描述 (System Description)}
 \subsubsection{系統架構圖 (System Architecture Diagram) }
+\includegraphics[width=30em]{arch-digram.png}
+\cite{aws_arch_diagram}
+
 \subsection{操作概念 (Operational Concepts or User Stories)}
 \subsection{功能性需求 (Functional Requirements)}
 \subsection{資料需求 (Data Requirements)}

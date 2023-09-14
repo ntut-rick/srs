@@ -39,6 +39,8 @@
 \titleformat*{\subsection}{\NormalFont\bfseries}
 \titleformat*{\subsubsection}{\NormalFont}
 
+\renewcommand{\arraystretch}{1.2} % table row height
+
 %----------------------------------------------------------
 
 \begin{document}
@@ -53,7 +55,6 @@
     {\SixteenTitle Version: \myVersion \par}
     \vspace{4cm}
     {\SixteenTitle
-    \renewcommand{\arraystretch}{1.3} % row height
     \begin{tabular}{ccc}
       姓名 & 學號 & E-mail \\[0.2em]
       劉建宏 & 000000000 & t000000000@ntut.org.tw \\
@@ -63,7 +64,6 @@
       劉建宏 & 000000000 & t000000000@ntut.org.tw \\
       劉建宏 & 000000000 & t000000000@ntut.org.tw \\
     \end{tabular}
-    \renewcommand{\arraystretch}{1} % reset
     \par}
     \vspace{2cm}
     {\SixteenTitle Department of Computer Science \& Information Engineering National Taipei University of Technology \par}
@@ -129,6 +129,35 @@
 
 \subsection{概觀 (Overview)}
 \subsection{符號描述 (Notation Description) (if any)}
+
+\newcommand{\notationDescTableCol}{ | p{6.5em} | p{32em} |}
+
+\noindent \begin{tabular}{\notationDescTableCol}
+  \hline
+  Notation & Description \\
+  \hline
+  ABCDS 1.0.0 & Alien Bacon Cat Dragons System will be labeled with the number 1.0.0 \\
+  ABCDS 1.1.n & Alien Bacon Cat Dragons Subsystem will be labeled with the number 1.1.n \\
+  ABCDS 1.1.n & Alien Bacon Cat Dragons Subsystem will be labeled with the number 1.1.n \\
+  ABCDS 1.1.n & Alien Bacon Cat Dragons Subsystem will be labeled with the number 1.1.n \\
+  ABCDS 1.1.n & Alien Bacon Cat Dragons Subsystem will be labeled with the number 1.1.n \\
+  \hline
+\end{tabular} \par
+
+\noindent \begin{tabular}{\notationDescTableCol}
+  \hline
+  Notation & Description \\
+  \hline
+  ABCDS-I-nnn & ABCDS 介面需求(Interface Requirements) \\
+  ABCDS-F-nnn & ABCDS 功能性需求(Functional Requirements) \\
+  ABCDS-D-nnn & ABCDS 資料需求(Data Requirements) \\
+  ABCDS-N-nnn & ABCDS 非功能性需求(Non-Functional Requirements) \\
+  ABCDS-O-nnn & ABCDS 其他需求(Other Requirements) \\
+  ABCDS-B-nnn & ABCDS 商業規則或約束 (Business Rules or Constraints) \\
+  \hline
+\end{tabular} \par
+
+\newpage
 
 \section{系統 (System)}
 \subsection{系統描述 (System Description)}
